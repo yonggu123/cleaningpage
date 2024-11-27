@@ -1,7 +1,7 @@
 import { CleaningOptions, PriceBreakdown } from '../types/calculator';
 
 const PRICE_CONFIG = {
-  basePerArea: 15000,    // 평당 기본 가격
+  basePerArea: 9000,    // 평당 기본 가격
   roomPrice: 30000,      // 방당 가격
   bathroomPrice: 70000,  // 화장실당 가격
   balconyPrice: 40000,   // 발코니 추가 가격
