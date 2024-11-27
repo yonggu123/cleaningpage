@@ -19,7 +19,7 @@ export function calculateCleaningPrice(options: CleaningOptions): PriceBreakdown
   const bathroomPrice = options.bathrooms * PRICE_CONFIG.bathroomPrice;
   const balconyPrice = options.hasBalcony ? PRICE_CONFIG.balconyPrice : 0;
   
-  let subtotal = basePrice + roomPrice + bathroomPrice + balconyPrice;
+  const subtotal = basePrice + roomPrice + bathroomPrice + balconyPrice;
   
   // 서비스 타입에 따른 할증
   const serviceTypePrice = subtotal * (PRICE_CONFIG.serviceTypeMultiplier[options.serviceType] - 1);
