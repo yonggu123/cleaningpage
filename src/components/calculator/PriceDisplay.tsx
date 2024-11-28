@@ -10,17 +10,10 @@ export default function PriceDisplay({ breakdown }: PriceDisplayProps) {
       <h2 className="text-xl font-bold mb-4">청소 견적 상세</h2>
       <div className="space-y-2">
         <PriceRow label="기본 청소 비용" amount={breakdown.basePrice} />
-        <PriceRow label="방 청소 비용" amount={breakdown.roomPrice} />
-        <PriceRow label="화장실 청소 비용" amount={breakdown.bathroomPrice} />
-        {breakdown.balconyPrice > 0 && (
-          <PriceRow label="발코니 청소 비용" amount={breakdown.balconyPrice} />
-        )}
-        {breakdown.serviceTypePrice > 0 && (
-          <PriceRow label="서비스 할증 비용" amount={breakdown.serviceTypePrice} />
-        )}
-        {breakdown.disinfectionPrice > 0 && (
-          <PriceRow label="소독 서비스 비용" amount={breakdown.disinfectionPrice} />
-        )}
+        
+        
+        <PriceRow label="거실 확장 할인" amount={breakdown.balconyPrice} />
+               
         <div className="border-t pt-2 mt-4">
           <PriceRow 
             label="총 견적 금액" 

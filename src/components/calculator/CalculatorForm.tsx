@@ -59,8 +59,8 @@ return (
             className="w-full border border-gray-300 rounded-md px-3 py-2"
           >
             <option value="basic">입주 청소</option>
-            <option value="deep">이사 청소</option>
-            <option value="move">포인트 청소</option>
+            <option value="move">이사 청소</option>
+            
           </select>
         </div>
 
@@ -72,7 +72,7 @@ return (
               onChange={(e) => setOptions({ ...options, hasBalcony: e.target.checked })}
               className="rounded text-blue-500"
             />
-            <span className="ml-2">발코니 포함</span>
+            <span className="ml-2">거실 확장형</span>
           </label>
 
           <label className="inline-flex items-center">

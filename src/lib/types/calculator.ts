@@ -4,15 +4,11 @@ export interface CleaningOptions {
     bathrooms: number;
     hasBalcony: boolean;
     needsDisinfection: boolean;
-    serviceType: 'basic' | 'deep' | 'move';
+    serviceType: 'basic' |  'move';
   }
   
   export interface PriceBreakdown {
     basePrice: number;
-    roomPrice: number;
-    bathroomPrice: number;
     balconyPrice: number;
-    disinfectionPrice: number;
-    serviceTypePrice: number;
     total: number;
   }
