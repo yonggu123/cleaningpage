@@ -9,8 +9,8 @@ import PriceDisplay from '../calculator/PriceDisplay';
 export default function CalculatorForm() {
   const [options, setOptions] = useState<CleaningOptions>({
     area: 0,
-    rooms: 1,
-    bathrooms: 1,
+    rooms: 0,
+    bathrooms: 0,
     hasBalcony: false,
     needsDisinfection: false,
     serviceType: 'basic'
