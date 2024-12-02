@@ -5,6 +5,7 @@ export interface CleaningOptions {
     hasBalcony: boolean;
     needsDisinfection: boolean;
     serviceType: 'basic' |  'move';
+    buildingType: string;
   }
   
   export interface PriceBreakdown {

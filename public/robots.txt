@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://cleaningpage.vercel.app/sitemap.xml

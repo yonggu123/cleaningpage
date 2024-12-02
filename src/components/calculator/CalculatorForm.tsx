@@ -13,7 +13,8 @@ export default function CalculatorForm() {
     bathrooms: 0,
     hasBalcony: false,
     needsDisinfection: false,
-    serviceType: 'basic'
+    serviceType: 'basic',
+    buildingType: '',
   });
 
   const [breakdown, setBreakdown] = useState<PriceBreakdown | null>(null);
@@ -26,6 +27,7 @@ export default function CalculatorForm() {
 // ... 이전 코드 유지 ...
 // ... 이전 코드 유지 ...
 return (
+  <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
     <div className="maxW2xl mxAuto p6">
       <div className="spaceY6">
         <InputField
@@ -64,6 +66,24 @@ return (
           </select>
         </div>
 
+        <div className="space-y-2">
+          <label className="text-gray-700 font-medium">건물 유형</label>
+          <select 
+            value={options.buildingType}
+            onChange={(e) => setOptions({ ...options, buildingType: e.target.value })}
+            className="w-full border border-gray-300 rounded-md px-3 py-2"
+          >
+            <option value="">선택해주세요</option>
+            <option value="apartment">아파트</option>
+            <option value="villa">빌라</option>
+            <option value="officetel">오피스텔</option>
+            <option value="house">단독주택</option>
+            <option value="office">사무실</option>
+          </select>
+        </div>
+
+        
+
         <div className="space-x-4">
           <label className="inline-flex items-center">
             <input
@@ -96,5 +116,6 @@ return (
         {breakdown && <PriceDisplay breakdown={breakdown} />}
       </div>
     </div>
+  </div>  
   );
 }
