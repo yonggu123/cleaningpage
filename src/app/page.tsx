@@ -22,8 +22,7 @@ export default function Home() {
             }
           })}
         </script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6238144034010969"
-     crossorigin="anonymous">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6238144034010969" crossorigin="anonymous">
         </script>
       </Head>
       <main className="min-h-screen py-8">
