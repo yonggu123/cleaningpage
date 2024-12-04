@@ -22,8 +22,7 @@ export default function Home() {
             }
           })}
         </script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6238144034010969" crossorigin="anonymous">
-        </script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6238144034010969" crossOrigin="anonymous"></script>
       </Head>
       <main className="min-h-screen py-8">
         <div className="max-w-4xl mx-auto px-4">
