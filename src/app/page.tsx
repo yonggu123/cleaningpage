@@ -22,6 +22,7 @@ export default function Home() {
               "query-input": "required name=search_term_string"
             }
           })}
+        </script>
         
       </Head>
       <main className="min-h-screen py-8">
