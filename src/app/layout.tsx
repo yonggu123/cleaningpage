@@ -16,6 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "입주청소 비용 계산기 - 간결하고 빠른 견적 받기",
   description: "입주청소 비용 계산기를 이용해 손쉽게 청소 견적을 받아보세요.",
+  other: {
+    "google-adsense-account": "ca-pub-6238144034010969",
+  },  
 };
 
 export default function RootLayout({
@@ -25,9 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="google-adsense-account" content="ca-pub-6238144034010969">
-      </head>
+     
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
