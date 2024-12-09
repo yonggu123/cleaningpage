@@ -18,10 +18,12 @@ export default function CalculatorForm() {
   });
 
   const [breakdown, setBreakdown] = useState<PriceBreakdown | null>(null);
+  const [showInfo, setShowInfo] = useState(false);
 
   const handleCalculate = () => {
     const result = calculateCleaningPrice(options);
     setBreakdown(result);
+    setShowInfo(true);
   };
 
 // ... 이전 코드 유지 ...
@@ -84,7 +86,7 @@ return (
 
         
 
-        <div className="space-x-4">
+        <div className="space-x-4 mb-4">
           <label className="inline-flex items-center">
             <input
               type="checkbox"
@@ -102,7 +104,7 @@ return (
               onChange={(e) => setOptions({ ...options, needsDisinfection: e.target.checked })}
               className="rounded text-blue-500"
             />
-            <span className="ml-2">소독 서비스 추가</span>
+            <span className="ml-2">가전제품 추가</span>
           </label>
         </div>
 
@@ -114,8 +116,33 @@ return (
         </button>
 
         {breakdown && <PriceDisplay breakdown={breakdown} />}
+        {showInfo && (
+          <div>
+            <div className="text-sm text-gray-600 mt-4">
+              본 견적은 예상 견적이며 업체별/현장별로 금액이 상이할 수 있습니다.(FAQ 참고)
+            </div>
+            <div className="text-sm text-gray-600 mt-4">
+              문의하기를 누르시면 1:1 무료 견적을 받으실 수 있습니다.
+            </div>
+          </div>
+        )}
+
+        <div className="flex space-x-4 mt-4">
+          <a href="https://blog.naver.com/ucanclean/223687676693"
+             className="flex-grow bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors">
+            청소견적 GUIDE
+          </a>      
+          <a href="https://map.naver.com/p/search/%EC%9C%A0%EC%BA%94%ED%81%B4%EB%A6%B0/place/1621803637?placePath=?entry=pll&from=nx&fromNxList=true&searchType=place&c=15.00,0,0,0,dh" 
+             className="flex-grow bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors">
+            문의하기
+          </a>
+          <a href="https://blog.naver.com/ucanclean/223148778152"
+             className="flex-grow bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors">
+              청소방법
+          </a>
+        </div>
       </div>
     </div>
-  </div>  
+  </div>
   );
 }
