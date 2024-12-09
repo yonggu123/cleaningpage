@@ -8,6 +8,11 @@ export default function Home() {
         <title>입주청소 비용 계산기 - 간결하고 빠른 견적 받기</title>
         <meta name="description" content="입주청소 가격 및 비용을 빠르게 계산하고, 손쉽게 청소 견적을 받아보세요." />
         <meta name="keywords" content="입주청소, 입주청소 비용, 입주청소 가격, 청소업체 추천, 입주청소 견적" />
+        <link rel="canonical" href="https://cleaningpage.vercel.app/" />
+        <meta property="og:title" content="입주청소 가격 비용 계산기" />
+        <meta property="og:description" content="입주청소 가격 및 비용을 빠르게 계산하고, 손쉽게 청소 견적을 받아보세요." />
+        <meta property="og:url" content="https://cleaningpage.vercel.app/" />
+        <meta property="og:type" content="website" />
         
         <script type="application/ld+json">
           {JSON.stringify({
