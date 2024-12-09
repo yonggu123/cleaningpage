@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "입주청소 비용 계산기 - 간결하고 빠른 견적 받기",
+  title: "입주청소 가격 비용 계산기 - 간결하고 빠른 견적 받기",
   description: "입주청소 비용 계산기를 이용해 손쉽게 청소 견적을 받아보세요.",
   other: {
     "google-adsense-account": "ca-pub-6238144034010969",
